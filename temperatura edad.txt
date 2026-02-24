@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		 System.out.println("temperatura registrada: ");
+        Scanner leer = new Scanner(System.in);
+        float temp = leer.nextFloat();
+        
+        if(temp>=27){System.out.println("pongase algo mas fresco");}
+        else if (temp>=20 && temp<27){System.out.println("abriguese");}
+        else if (temp>=16 && temp<20){System.out.println("abriguese mas");}
+        else{System.out.println("Esta helado");}
+        
+        int edad=leer.nextInt();
+        System.out.println(edad>=18? "eres mayor de edad": "no eres mayor de edad");
+        
+	}
+
+}
