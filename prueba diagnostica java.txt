@@ -1,0 +1,206 @@
+import java.util.Scanner;
+
+public class Ej1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite a: ");
+        double a = sc.nextDouble();
+
+        System.out.print("Digite b: ");
+        double b = sc.nextDouble();
+
+        System.out.print("Digite c: ");
+        double c = sc.nextDouble();
+
+        double total1 = (-b + Math.sqrt(b*b - 4*a*c)) / (2*a);
+        double total2 = (-b - Math.sqrt(b*b - 4*a*c)) / (2*a);
+
+        System.out.println("x1=" + total1 + ", x2=" + total2);
+    }
+}
+
+
+public class Ej2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite numero a evaluar: ");
+        double num = sc.nextDouble();
+
+        String res = (num % 2 == 0) ? "Es par" : "Es impar";
+        System.out.println(res);
+    }
+}
+
+
+
+public class Ej3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite el año a evaluar: ");
+        int año = sc.nextInt();
+
+        if ((año % 4 == 0 && año % 100 != 0) || (año % 400 == 0)) {
+            System.out.println("Es un año bisiesto");
+        } else {
+            System.out.println("No es un año bisiesto");
+        }
+    }
+}
+
+
+
+public class Ej4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double n1 = sc.nextDouble();
+        double n2 = sc.nextDouble();
+        double n3 = sc.nextDouble();
+
+        if (n1 > n2 && n1 > n3) {
+            System.out.println(n1);
+        } else if (n2 > n1 && n2 > n3) {
+            System.out.println(n2);
+        } else {
+            System.out.println("El mayor numero es: " + n3);
+        }
+    }
+}
+
+
+        double l1 = sc.nextDouble();
+        double l2 = sc.nextDouble();
+        double l3 = sc.nextDouble();
+
+        if (l1 == l2 && l2 == l3) {
+            System.out.println("equilatero");
+        } else if (l1 == l2 || l2 == l3 || l1 == l3) {
+            System.out.println("isosceles");
+        } else {
+            System.out.println("escaleno");
+        }
+    }
+}
+
+
+public class Ej6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String nombre = sc.nextLine();
+        double kg = sc.nextDouble();
+        double h = sc.nextDouble();
+
+        double imc = kg / (h*h);
+
+        if (imc < 18.5) {
+            System.out.println(nombre + "\nCategoria:bajo peso");
+        } else if (imc < 24.9) {
+            System.out.println(nombre + "\nCategoria:peso normal");
+        } else if (imc < 29.9) {
+            System.out.println(nombre + "\nCategoria:sobrepeso");
+        } else if (imc >= 30) {
+            System.out.println(nombre + "\nCategoria:obesidad");
+        } else {
+            System.out.println("error");
+        }
+    }
+}
+
+
+
+
+public class Ej7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double n1 = sc.nextDouble();
+        double n2 = sc.nextDouble();
+        String signo = sc.next();
+
+        if (signo.equals("-")) {
+            System.out.println(n1 - n2);
+        } else if (signo.equals("+")) {
+            System.out.println(n1 + n2);
+        } else if (signo.equals("*")) {
+            System.out.println(n1 * n2);
+        } else if (signo.equals("/")) {
+            System.out.println(n1 / n2);
+        } else {
+            System.out.println("error");
+        }
+    }
+}
+
+
+
+
+public class Ej8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double nota = sc.nextDouble();
+
+        if (nota < 0 || nota > 100) {
+            System.out.println("Nota invalida");
+        } else if (nota >= 90) {
+            System.out.println("Clasificacion: A");
+        } else if (nota >= 80) {
+            System.out.println("Clasificacion: B");
+        } else if (nota >= 70) {
+            System.out.println("Clasificacion: C");
+        } else if (nota >= 60) {
+            System.out.println("Clasificacion: D");
+        } else {
+            System.out.println("Clasificacion: F");
+        }
+    }
+}
+
+
+
+public class Ej9 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        if (n == 1) System.out.println("Lunes");
+        else if (n == 2) System.out.println("Martes");
+        else if (n == 3) System.out.println("Miercoles");
+        else if (n == 4) System.out.println("Jueves");
+        else if (n == 5) System.out.println("Viernes");
+        else if (n == 6) System.out.println("Sabado");
+        else if (n == 7) System.out.println("Domingo");
+        else System.out.println("error");
+    }
+}
+
+
+public class Ej10 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+
+        if (a + b > c && a + c > b && b + c > a) {
+            System.out.println("Si puede formar un triangulo");
+
+            if (a == b && b == c) {
+                System.out.println("triangulo Equilatero");
+            } else if (a == b || a == c || b == c) {
+                System.out.println("triangulo Isosceles");
+            } else {
+                System.out.println("triangulo Escaleno");
+            }
+        } else {
+            System.out.println("No puede formar un triangulo");
+        }
+    }
+}
+
