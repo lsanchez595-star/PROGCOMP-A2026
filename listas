@@ -1,0 +1,350 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/lsanchez595-star/PROGCOMP-A2026/blob/main/listas\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "v9z9QUJAm7FE"
+      },
+      "outputs": [],
+      "source": [
+        "#Quiero saber cuántos n estudiantes sacan más del promedio :)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1=int(input(\"Ingrese su primera nota:\"))\n",
+        "n2=int(input(\"Ingrese su segunda nota:\"))\n",
+        "n3=int(input(\"Ingrese su tercera nota:\"))\n",
+        "\n",
+        "condición=n1+n2+n3/3\n",
+        "\n",
+        "for i in range (condicion):\n",
+        "  i > condicion\n",
+        "print(f\"Estas son las notas mayores al promedio {i}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 263
+        },
+        "id": "vlE47roHoPrY",
+        "outputId": "abcfcef8-d291-48ba-ff7c-1c1b4dc02c3b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Ingrese su primera nota:2\n",
+            "Ingrese su segunda nota:3\n",
+            "Ingrese su tercera nota:4\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'condicion' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_267/3235474823.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mcondición\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mn1\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mn2\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mn3\u001b[0m\u001b[0;34m/\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 7\u001b[0;31m \u001b[0;32mfor\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mcondicion\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      8\u001b[0m   \u001b[0mi\u001b[0m\u001b[0;34m>\u001b[0m\u001b[0mp\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mf\"Estas son las notas mayores al promedio {i}\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'condicion' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "suma=0\n",
+        "c=0\n",
+        "n=int(input(\"Ingrese la cantidad de estudiantes\"))\n",
+        "for i in range(n)\n",
+        "nota=int(input(\"\"))"
+      ],
+      "metadata": {
+        "id": "7N2gZOaTr5tt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#LISTAS\n",
+        "Es una colección de elementos que cumple las siguientes características.\n",
+        "1. Mutable\n",
+        "2. Es que tiene index\n",
+        "\n",
+        "##Creación de listas\n",
+        "nombre_lista=[]\n",
+        "\n",
+        "Existen ds formas de crear una lista:\n",
+        "1. Por extensión: Se nombra uno a uno los elementos\n",
+        "2. Por comprensión: Se nombra la característica general\n",
+        "3. Sus elementos están separados por comas"
+      ],
+      "metadata": {
+        "id": "SAesHWP-tU-L"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "galleta=[\"angeles\", \"dinosaurios\", \"diablitos\"]\n",
+        "cant_galletas=[2,2,3]"
+      ],
+      "metadata": {
+        "id": "KNRJS0h1v1u6"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Forma manual\n",
+        "Sintaxis\n",
+        "```\n",
+        "nombre_lista=[posición de interés]\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "ApbnivC-wUUJ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "galleta[2]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "aiq7K4PgwhdJ",
+        "outputId": "978f8d28-9dbb-4489-ab61-c63b6e31b226"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'diablitos'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cant_galletas[2]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VszT5aRrwqNZ",
+        "outputId": "7e516446-acb5-4bd1-e05a-040f0022403f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##Forma automática\n",
+        "for caja in range(3):\n",
+        "  print(f\"{galleta[caja]}:{cant_galletas[caja]}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Eulm61ZTwxbg",
+        "outputId": "8708b4a6-c80e-4f18-d378-987c41c58280"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "angeles:2\n",
+            "dinosaurios:2\n",
+            "diablitos:3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "salarios=[1000,2000,1500,4000,7000]\n",
+        "promedio=sum(salarios)/len(salarios)\n",
+        "mayores=[]\n",
+        "\n",
+        "for salario in salarios:\n",
+        "  if salario>promedio:\n",
+        "    mayores.append(salario)\n",
+        "print(\"promedio:\", promedio)\n",
+        "print(\"cantidad que gana más:\", len(mayores))\n",
+        "print(\"Salarios mayores al promedio:\",mayores)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-X3BQFw7y82f",
+        "outputId": "f8d594d4-4758-4b2b-beb8-8d1d2cec4dfb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "promedio: 3100.0\n",
+            "cantidad que gana más: 2\n",
+            "Salarios mayores al promedio: [4000, 7000]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "productos=[\"pan\",\"leche\",\"arroz\",\"vinagre\",\"frutas\",\"aceite\"]\n",
+        "precios=[4000,12000,13000,7000,8000,10000]\n",
+        "print(\"Este es el menú de la tienda\")\n",
+        "for i in range(len(productos)):\n",
+        "  print(i+1, productos[i],\"-\",precios[i])\n",
+        "opcion=int(input(\"seleccione un productos:\"))\n",
+        "print(\"Elegiste:\", productos[opcion-1])\n",
+        "print(\"precios:\", precios[opcion-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SkJOPdn_1PKl",
+        "outputId": "40488a02-07c4-4bfe-e96e-3cc423092ccf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Este es el menú de la tienda\n",
+            "1 pan - 4000\n",
+            "2 leche - 12000\n",
+            "3 arroz - 13000\n",
+            "4 vinagre - 7000\n",
+            "5 frutas - 8000\n",
+            "6 aceite - 10000\n",
+            "seleccione un productos:2\n",
+            "Elegiste: leche\n",
+            "precios: 12000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numeros=[4,10,23,15,20,18]\n",
+        "n=int(input(\"ingrese el numero n:\"))\n",
+        "contador=0\n",
+        "for num in numeros:\n",
+        "  if num%n==0:\n",
+        "    contador+=1\n",
+        "print(\"Cantidad de multiplos de\", n,\":\", contador)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NvnrHFKg2bSX",
+        "outputId": "d96caec5-7e33-446c-c1f0-96ab2a34920d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ingrese el numero n:2\n",
+            "Cantidad de multiplos de 2 : 4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lluvia=input(\"¿Esta lloviendo?\")\n",
+        "if lluvia==\"si\":\n",
+        "  print(\"cierra las ventanas\")\n",
+        "else:\n",
+        "  if lluvia==\"un poquito\":\n",
+        "     print(\"si vas a salir lleva sombrilla\")\n",
+        "  else:\n",
+        "        print(\"resguardate\")"
+      ],
+      "metadata": {
+        "id": "FVQWv3Fr5sgp"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
