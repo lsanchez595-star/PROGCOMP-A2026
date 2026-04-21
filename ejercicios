@@ -1,0 +1,395 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOwdJiL5WiU1IiMS/iyw4W3",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/lsanchez595-star/PROGCOMP-A2026/blob/main/ejercicios\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "id": "tvV8g4uxjo_w"
+      },
+      "outputs": [],
+      "source": [
+        "minero={\"nombre\": \"Alexandra\",\n",
+        "       \"experiencia\": 999999999,\n",
+        "       \"kinket\": 2000000000000000000}"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre=\"Alexandra\""
+      ],
+      "metadata": {
+        "id": "9Xeqwc1ykIfu"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre.capitalize()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "Y3HnE8trkWOR",
+        "outputId": "68f26e35-8be6-4f18-9615-0e5df2e4f1a2"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Alexandra'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "edad=38"
+      ],
+      "metadata": {
+        "id": "r5JPwh4ykZtm"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##acceder a un diccionario- claves\n",
+        "minero.keys()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ni9v7ZbEkdLm",
+        "outputId": "d361e24f-c288-4b2f-caa5-f22952ffa74f"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_keys(['nombre', 'experiencia', 'kinket'])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##Acceder a un diccionario - valores\n",
+        "minero.values()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vzpnIqP0loU9",
+        "outputId": "2166ba57-c7dc-404b-822e-8205efeeb7cf"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_values(['Alexandra', 999999999, 2000000000000000000])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##Acceder a un valor en particular\n",
+        "minero[\"experiencia\"]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bM0uvml4lxJM",
+        "outputId": "3ff6154e-052f-4a45-e457-3e9028a377d8"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "999999999"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 9
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "#ejercicio 1\n",
+        "frutas={\"manzana\": 2500,\n",
+        "        \"pera\": 1800,\n",
+        "        \"uva\": 3200}\n",
+        "print(frutas[\"manzana\"])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "r_I9S1R4mNoN",
+        "outputId": "45c10b9c-50e5-452a-e76f-051fa53a0929"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2500\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "#ejercicio 2\n",
+        "funpro={\"kamyla\": 6,\n",
+        "        \"Luna\": 5,\n",
+        "        \"isaac\": 0}\n",
+        "print(funpro)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "R_Ezpz4Bp6uJ",
+        "outputId": "fbc98a47-7481-40fc-fbd3-e09261605d82"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'kamyla': 6, 'Luna': 5, 'isaac': 0}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "funpro[\"maxi\"]=2\n",
+        "print(funpro)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LsiWgB1Bron-",
+        "outputId": "71804a03-7097-4a20-90a3-9e6e8d368754"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'kamyla': 6, 'Luna': 5, 'isaac': 0, 'maxi': 2}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ejercicio 3\n",
+        "pociones={\"vida\": 3,\n",
+        "          \"veneno\": 5,\n",
+        "          \"fuego\":2}\n",
+        "print(pociones)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7X1Ub4tNrCy5",
+        "outputId": "a9585d9c-4029-49a0-a860-f86f362ad196"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'vida': 3, 'mana': 5, 'fuerza': 2}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pociones[\"veneno\"]=10\n",
+        "print(pociones)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5Jfdqk_qrghe",
+        "outputId": "711e27d1-8eb5-4967-d223-f22951eb154d"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'vida': 3, 'mana': 10, 'fuerza': 2}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ejercicio 4\n",
+        "herramientas={\"varita\": 1,\n",
+        "             \"baculo\": 1,\n",
+        "              \"pistolatp\":1,\n",
+        "              \"escudo\":1}\n",
+        "print(herramientas)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "D9GRW0rvrtwF",
+        "outputId": "14e45c7d-aea8-42e5-d673-035767e970f1"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'varita': 1, 'baculo': 1, 'pistolatp': 1, 'escudo': 1}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "del herramientas [\"baculo\"]\n",
+        "print(herramientas)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X-d0e7w5tSE9",
+        "outputId": "817f6770-b053-4c9e-92cc-1114fb854b9e"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'varita': 1, 'pistolatp': 1, 'escudo': 1}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ejercicio 5\n",
+        "estudiantes ={\"Kamila\": [4.0, 3.5, 4.5],\n",
+        "              \"Luna\": [5.0, 5.0, 5.0, ],\n",
+        "              \"maxi\":[4.0, 5.0, 3.0]}\n",
+        "\n",
+        "for nombre in estudiantes:\n",
+        "  suma=0\n",
+        "  notas=estudiantes[nombre]\n",
+        "for nota in notas:\n",
+        "  suma= suma + nota\n",
+        "  promedio= suma/len(notas)\n",
+        "  print(nombre, \"promedio: \", promedio)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nFeQd2i_tgY8",
+        "outputId": "708b484a-0d6e-4e7e-b64f-1d0c8f305f66"
+      },
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "maxi promedio:  1.3333333333333333\n",
+            "maxi promedio:  3.0\n",
+            "maxi promedio:  4.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
